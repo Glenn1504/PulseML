@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/glennc/Documents/PulseML/mlruns/678525257480889930/b0f57860fb4c432caad3e5b7b85ce57d/artifacts
+end_time: 1775084271522
+entry_point_name: ''
+experiment_id: '678525257480889930'
+lifecycle_stage: active
+run_id: b0f57860fb4c432caad3e5b7b85ce57d
+run_name: ensemble-v2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1775084271014
+status: 4
+tags: []
+user_id: glennc

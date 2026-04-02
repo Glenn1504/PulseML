@@ -1,0 +1,37 @@
+# configs/train_config.yaml
+# All hyperparameters and paths in one place.
+# Override any value with: python -m src.models.train --config my_config.yaml
+
+experiment_name: "pulseml-deterioration"
+run_name:        "ensemble-v2"
+model_version:   "v2.0.0"
+
+# Paths
+raw_dir:       "data/raw"
+processed_dir: "data/processed"
+model_dir:     "models/latest"
+
+# Ensemble weights (must sum to 1.0)
+xgb_weight:  0.55
+lstm_weight: 0.45
+use_lstm:    false
+
+# XGBoost hyperparameters
+xgb:
+  n_estimators:        400
+  max_depth:           6
+  learning_rate:       0.05
+  subsample:           0.8
+  colsample_bytree:    0.8
+  min_child_weight:    5
+  scale_pos_weight:    3       # ~25% positive rate → roughly (1-0.25)/0.25 * 1
+  early_stopping_rounds: 30
+
+# LSTM hyperparameters
+lstm:
+  hidden_size:  64
+  num_layers:   2
+  dropout:      0.3
+  lr:           0.001
+  epochs:       20
+  batch_size:   256
