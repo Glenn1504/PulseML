@@ -1,20 +1,52 @@
-# macOS
-.DS_Store
-
-# editor
-.vscode/
-
-# python
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
 .venv/
+venv/
 env/
 
-# data / artifacts
-data/
-mlruns/
-models/
-reports/eval/
+# Data (tracked via DVC or S3 — not git)
+data/raw/
+data/processed/
 
-# notebooks
+# Model artifacts
+# models/  <- uncommit to include trained model in Docker image
+
+# MLflow
+mlruns/
+
+# Reports (generated)
+reports/
+
+# Coverage
+.coverage
+coverage.xml
+htmlcov/
+
+# Jupyter
 .ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+.docker/
+
+# Secrets (never commit)
+.env
+*.key
+*.pem
+secrets/
