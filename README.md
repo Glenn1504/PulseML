@@ -5,8 +5,8 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.111-green.svg)](https://fastapi.tiangolo.com/)
 [![MLflow](https://img.shields.io/badge/MLflow-2.13-orange.svg)](https://mlflow.org/)
+[![Live API](https://img.shields.io/badge/API-live-brightgreen)](https://pulseml-production.up.railway.app/docs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![CI](https://github.com/yourusername/pulseml/actions/workflows/ci.yml/badge.svg)](https://github.com/yourusername/pulseml/actions)
 
 ---
 
