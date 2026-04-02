@@ -1,0 +1,15 @@
+.git
+.gitignore
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+data/
+mlruns/
+models/
+notebooks/
+reports/
+
+.env
+.venv
